@@ -740,14 +740,14 @@ h3.my-profession {
     color: var(--skin-color);
     text-align: center;
     font-size: 25px;
-    margin-bottom: 20px;
+    margin-bottom: 35px;
 }
 
 .contect-sub-title {
     color: var(--font-black-900);
     text-align: center;
     font-size: 15px;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
 }
 
 .contact-info-item {
