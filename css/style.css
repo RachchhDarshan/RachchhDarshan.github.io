@@ -711,7 +711,7 @@ h3.my-profession {
 }
 
 .portfolio .portfolio-heading h2 {
-    color: var(-- --font-black-900);
+    color: var(--font-black-900);
     font-weight: 500;
     margin-bottom: 40px;
 }
@@ -734,7 +734,83 @@ h3.my-profession {
     display: block;
 
 }
+.portfolio .portfolio-item-inner .portfolio-box {
+    position: relative;
+    border-radius: 10px;
+    /* box-shadow: 0 0 1rem blue; */
+    overflow: hidden;
+    display: flex;
+}
 
+.portfolio .portfolio-item-inner .portfolio-box img {
+    width: 100%;
+    transition: .5s ease;
+}
+
+.portfolio .portfolio-item-inner .portfolio-box:hover img {
+    transform: scale(1.1);
+    opacity: 0.1;
+}
+.portfolio .portfolio-item-inner .portfolio-box .portfolio-layer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(245, 242, 242, 0.379), var(--skin-color));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 4rem;
+    color: var(--font-black-900);
+    transform: translateY(100%);
+    transition: .5s ease;
+    /* font-size: 1.5rem; */
+}
+.portfolio .portfolio-item-inner .portfolio-box:hover .portfolio-layer {
+    transform: translateY(0);
+}
+
+.portfolio .portfolio-item-inner .portfolio-layer h4 {
+    font-size: 12px;
+}
+
+.portfolio .portfolio-item-inner .portfolio-layer p {
+    font-size: 20px;
+    margin: .3rem 0 1rem;
+}
+
+.portfolio .portfolio-item-inner .portfolio-layer a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    background: var(--text-color);
+    border-radius: 50%;
+}
+
+.portfolio .portfolio-item-inner .portfolio-layer a i {
+    font-size: 2rem;
+    color: var(--second-bg-color);
+}
+.portfolio .portfolio-item-inner .portfolio-layer a .icon{
+    line-height: 40px;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    /* background: black; */
+    color: var(--font-black-900);
+    right: 100%;
+    font-size: 22px;
+    /* border: 1px solid var(--skin-color); */
+    cursor: pointer;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    border-radius: 50%;
+}
 /* Contact */
 .contact-title {
     color: var(--skin-color);
