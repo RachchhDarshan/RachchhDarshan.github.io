@@ -933,7 +933,9 @@ h3.my-profession {
         display: block;
         margin-left: 0;
     }
-
+    .portfolio .portfolio-item-inner .portfolio-layer p {
+        font-size: 10px;
+    }
     .skills-items-info .skills-item {
         display: block;
         margin-left: 0;
@@ -946,6 +948,9 @@ h3.my-profession {
         flex: 0 0 50%;
         max-width: 50%;
     }
+    .portfolio .portfolio-item-inner .portfolio-layer p {
+        font-size: 10px;
+    }
 
 }
 @media (max-width:991px) {
@@ -955,8 +960,11 @@ h3.my-profession {
     .service .service-item {
         flex: 0 0 50%;
         max-width: 50%;
+        font-size: small;
     }
-
+    .portfolio .portfolio-item-inner .portfolio-layer p {
+        font-size: 10px;
+    }
     .home .home-info {
         flex: 0 0 100%;
         max-width: 100%;
@@ -980,6 +988,10 @@ h3.my-profession {
         flex: 0 0 100%;
         max-width: 100%;
     }
+    .portfolio .portfolio-item-inner .portfolio-layer p {
+        font-size: 10px;
+    }
+    
 }
 
 @media (max-width:749px) {
@@ -988,7 +1000,9 @@ h3.my-profession {
         flex: 0 0 50%;
         max-width: 70%;
     }
-
+    .portfolio .portfolio-item-inner .portfolio-layer p {
+        font-size: 10px;
+    }
 }
 @media (max-width:248px) {
     .about .about-content .personal-info .info-item{
@@ -996,5 +1010,13 @@ h3.my-profession {
         flex: 0 0 100%;
         max-width: 100%;
     }
-
+    .portfolio .portfolio-item-inner .portfolio-layer p {
+        font-size: 8px;
+    }
 }
+@media (max-width:390px) {
+    .portfolio .portfolio-item-inner .portfolio-layer p {
+        font-size: 8px;
+    }
+}
+
